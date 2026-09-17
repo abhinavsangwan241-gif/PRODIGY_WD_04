@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abhinav Sangwan | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f7f5fa;
+}
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #35106b;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Home */
+
+#home {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #35106b, #7929c7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.home h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 18px;
+}
+
+/* Sections */
+
+section {
+    min-height: 80vh;
+    padding: 110px 8% 60px;
+    text-align: center;
+}
+
+section h2 {
+    color: #4b0082;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.skill {
+    background: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #4b0082;
+    font-weight: bold;
+}
+
+/* Projects */
+
+#projects {
+    background: #eee7f5;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 280px;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    color: #4b0082;
+    margin-bottom: 15px;
+}
+
+.project p {
+    line-height: 1.6;
+}
+
+/* Education */
+
+.education-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.education-box h3 {
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact p {
+    margin: 12px;
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background: #35106b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+
+@media(max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="logo">Abhinav</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- Home -->
+
+<section id="home" class="home">
+
+    <div>
+        <h1>Hi, I'm Abhinav Sangwan</h1>
+
+        <h2>B.Sc CS Student & Web Developer</h2>
+
+        <p>
+            I create responsive and interactive websites
+            using modern web technologies.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- About -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p class="about-text">
+        I am a B.Sc Computer Science student with an interest
+        in web development. I enjoy creating responsive,
+        interactive and user-friendly websites using HTML,
+        CSS and JavaScript.
+    </p>
+
+</section>
+
+
+<!-- Education -->
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-box">
+
+        <h3>B.Sc Computer Science</h3>
+
+        <p>
+            SRM
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Skills -->
+
+<section id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">HTML</div>
+
+        <div class="skill">CSS</div>
+
+        <div class="skill">JavaScript</div>
+
+    </div>
+
+</section>
+
+
+<!-- Projects -->
+
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Task 01</h3>
+            <p>
+                Responsive Landing Page created using
+                HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Task 02</h3>
+            <p>
+                Stopwatch Web Application with start,
+                pause, reset and lap functionality.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Task 03</h3>
+            <p>
+                Interactive Tic-Tac-Toe game with
+                winner and draw detection.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>I'm interested in web development and new opportunities.</p>
+
+</section>
+
+
+<footer>
+    <p>© 2026 Abhinav Sangwan. All Rights Reserved.</p>
+</footer>
+
+</body>
+  </html>
